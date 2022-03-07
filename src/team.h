@@ -1,8 +1,5 @@
 #pragma once
 
-#include <iostream>
-using namespace std;
-
 struct Car {
 	int teamID;
 	int carNumber;
@@ -15,10 +12,10 @@ struct Car {
 class Team {
 public:
 	//Constructors
-	Team(int numCars = 0, int stage1Total = 0, int stage2Total = 0, int raceTotal = 0) {};
+	Team();
 
 	//Setters
-	void setTeamName(string name);
+	void setTeamName(std::string name);
 	void setTeamSize(int size);
 	void sets1Points(int s1p);
 	void sets2Points(int s2p);
@@ -31,7 +28,7 @@ public:
 	void setDidScore3(bool score3);
 
 	//Getters
-	string getTeamName();
+	std::string getTeamName();
 	int getTeamSize();
 	int gets1Points();
 	int gets2Points();
@@ -45,10 +42,8 @@ public:
 
 	//Printing function
 	void printReport();
-
-
 private:
-	string teamName;
+	std::string teamName;
 	int teamSize;
 	int teamID;
 	int stage1Total;
@@ -59,6 +54,4 @@ private:
 	bool didScore2;
 	bool didScore3;
 	int scorers[3];
-
-	   	  
 };

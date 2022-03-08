@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
 
-TEST(TeamTests, EmptyTest) {
+TEST(PointSystemTests, EmptyTest) {
   // body
 }

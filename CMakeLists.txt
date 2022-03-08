@@ -10,5 +10,4 @@ add_executable(teampointscalc
     src/team.cpp
     src/team.h
     src/teamPointsCalc.cpp
-    src/teamPointsCalc.h
 )

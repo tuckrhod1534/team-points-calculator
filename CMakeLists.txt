@@ -11,3 +11,5 @@ add_executable(teampointscalc
     src/team.h
     src/teamPointsCalc.cpp
 )
+
+target_compile_features(teampointscalc PRIVATE cxx_std_11)

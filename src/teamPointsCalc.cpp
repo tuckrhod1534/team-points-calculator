@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstdlib>
-#include "team.h"
 #include "pointSystem.h"
 using namespace std;
 

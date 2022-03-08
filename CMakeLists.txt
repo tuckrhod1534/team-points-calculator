@@ -13,3 +13,13 @@ add_executable(teampointscalc
 )
 
 target_compile_features(teampointscalc PRIVATE cxx_std_11)
+
+# tests target
+add_executable(tests src/tests/team_tests.cpp)
+target_compile_features(tests PRIVATE cxx_std_11)
+
+find_package(GTest REQUIRED)
+
+target_link_libraries(tests GTest::gtest)
+include(GoogleTest)
+gtest_add_tests(TARGET tests)

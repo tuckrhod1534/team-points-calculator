@@ -1,4 +1,3 @@
-from unicodedata import name
 from conans import ConanFile, CMake
 
 class TeamPointsCalc(ConanFile):
